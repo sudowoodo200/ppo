@@ -16,8 +16,8 @@ from tqdm import tqdm
 from torch.utils.tensorboard import SummaryWriter
 
 ## Proprietary Packages
-import env_utils as utl
-import ppo_agent as agt
+from utils import env_utils as utl
+from utils import ppo_agent as agt
 
 class PPO:
 
