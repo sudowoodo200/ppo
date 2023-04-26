@@ -50,7 +50,6 @@ class RolloutStorage:
     def compute_gae(self, next_value: Type[torch.Tensor], next_done: Type[torch.Tensor], gamma:float, l:float,  **kwargs):
 
         ## Initialize the next state variables
-        ## TODO: Understand why you want to re-initialize the advantage estimator
         gae = torch.zeros((self.num_envs), dtype=torch.float)
         self.advantages = torch.zeros((self.n_steps, self.num_envs), dtype=torch.float)
 
@@ -120,7 +119,7 @@ class EnvController:
             ##       Do you just continue? Or do you stop the rollout?
             ##       For now, I'm just going to continue.
 
-            ## TODO: Tensorboard logging of info
+            ## TODO: Tensorboard logging
         
         return state, done  ## Return the final state / done variable for the next rollout
 
