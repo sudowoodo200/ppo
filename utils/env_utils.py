@@ -10,7 +10,7 @@ from typing import Type, List, Callable, Dict, AnyStr
 import gymnasium as gym
 
 ## Supporting class for storing training rollout trajectories
-class RolloutStorage():
+class RolloutStorage:
 
     def __init__(self, n_steps: int, num_envs: int, envs:Type[gym.vector.SyncVectorEnv], **kwargs):
 

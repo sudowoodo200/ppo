@@ -22,3 +22,4 @@ pip install --ignore-installed -r requirements.txt
 # pip install -e .
 # cd ../..
 ##########################################@@@@@@@@@
+pip 
